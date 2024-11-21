@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katlego Diale | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+ 
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Your Next Web Developer is Here!</p>
+            <a href="#about" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="Images/1000042263.jpg" alt="Me" width="150" height="150">
+            <div>
+                <p>Hello! I'm Katlego Diale, a passionate web developer specializing in creating modern, responsive, and user-friendly websites. My expertise lies in front-end development, and I'm on a mission to deliver clean, efficient code that solves real-world problems.</p>
+                <p>I’m a strong advocate for the power of technology to shape the future. Whether it’s exploring new frameworks, working with startups, or contributing to open-source projects, I’m driven to make an impact in the tech space.</p>
+                <p>When I’m not coding, you’ll find me exploring the latest in AI, dabbling in graphic design, or writing tech blogs to share knowledge with the community.</p>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-content">
+            <img src="Images/Screenshot 2024-11-19 145746.png" alt="Code" width="300" height="200">
+            <ul class="skills-list">
+                <li>HTML & CSS</li>
+                <li>JavaScript (ES6+)</li>
+                <li>Responsive Design</li>
+            </ul>
+        </div>
+    </section>
+
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-content">
+         
+            <div class="project">
+                <img src="Images/visual-studio-code-01-100929884-large.webp" alt="Portfolio project preview" width="300" height="200">
+                <h3>Portfolio Website</h3>
+                <p>A fully responsive portfolio built with HTML, CSS, and JavaScript.</p>
+                <a href="#" target="_blank" class="project-link">View Project</a>
+            </div>
+
+            
+            <div class="project">
+                <img src="Images/Screenshot 2024-11-20 110533.png" alt="To-Do App preview" width="300" height="200">
+                <h3>To-Do List App</h3>
+                <p>A simple to-do list application using JavaScript and local storage.</p>
+                <a href="todo-app/index.html" target="_blank" class="project-link">View Project</a>
+            </div>
+
+
+            <div class="project">
+                <img src="Images/Screenshot 2024-11-20 110032.png" alt="Resume Website preview" width="300" height="200">
+                <h3>Resume Website</h3>
+                <p>A professional resume website built entirely using HTML.</p>
+                <a href="resume-website/index.html" target="_blank" class="project-link">View Project</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" rows="4" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Katlego Diale | <a href="#hero">Back to top</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/katlego-luzuko-diale-b7a4a1249/" target="_blank">linkedin.com/in/katlegoluzukodiale</a></p>
+        <p>GitHub: <a href="https://github.com/KatlegoL21" target="_blank">github.com/katlegodiale</a></p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katlego Diale | Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        h1 {
+            margin: 10px 0;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #f4f4f4;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        .contact-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+       
+        <header>
+            <img src="Images/1000042263.jpg" alt="Me" width="200" height="150">
+            <h1>Katlego Diale</h1>
+            <p>Web Developer & Designer</p>
+        </header>
+
+        
+        <section>
+            <h2>About Me</h2>
+            <p>Hello! I'm Katlego Diale, a passionate web developer specializing in creating modern, responsive, and user-friendly websites. My expertise lies in front-end development, and I'm on a mission to deliver clean, efficient code that solves real-world problems.</p>
+            <p>I’m a strong advocate for the power of technology to shape the future. Whether it’s exploring new frameworks, working with startups, or contributing to open-source projects, I’m driven to make an impact in the tech space.</p>
+            <p>When I’m not coding, you’ll find me playing football outside as it's one thing I truly love after coding.</p>
+        </section>
+
+        
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>JavaScript (ES6+)</li>
+                <li>Responsive Web Design</li>
+            </ul>
+        </section>
+
+       
+        <section class="contact-info">
+            <h2>Contact Me</h2>
+            <p>Email: dialekatlegoluzuko@gmail.com</p>
+            <p>Phone: +(27) 67 114 2169</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/katlego-luzuko-diale-b7a4a1249/" target="_blank">linkedin.com/in/katlegoluzukodiale</a></p>
+            <p>GitHub: <a href="https://github.com/KatlegoL21" target="_blank">github.com/katlegodiale</a></p>
+        </section>
+
+    </div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My To-Do List</h1>
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="Add a new task..." required>
+            <button type="submit">Add Task</button>
+        </form>
+        <ul id="todo-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+}
+
+#todo-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background: linear-gradient(to bottom, #000000 0%, #ffffff 100%);
+    color: white;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.edit-btn, .delete-btn {
+    background: linear-gradient(to bottom, #fbfbfb 0%, #ffcc99 100%);
+    border: none;
+    color: white;
+    padding: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.edit-btn:hover {
+    background-color: #005bb5;
+}
+
+.delete-btn {
+    background-color: red;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #222;
+    text-align: center;
+}
+
+
+
+header {
+    background: linear-gradient(to right, #000000, #ffffff);
+    padding: 5px 10px; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+nav ul {
+    list-style: none;
+    display: flex; 
+    justify-content: center; 
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px; 
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2); 
+}
+
+
+
+#hero {
+    background: linear-gradient(to bottom, #ffffff, #000000);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    height: 100vh;
+}
+
+.cta-button {
+    background: white;
+    color: #003399;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background: #ffcc00;
+}
+
+
+#about {
+    padding: 50px 20px;
+    background: #f4f4f4;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-content img {
+    border-radius: 50%;
+    max-width: 150px;
+}
+
+
+section {
+    padding: 50px 20px;
+}
+
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.skills-list li {
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 10px;
+    background: #0066cc;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.project {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 15px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+
+#contact {
+    background: #003399;
+    color: white;
+    text-align: center;
+}
+
+form input, form textarea, form button {
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #0072ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.project-link:hover {
+    background: #005bb5;
+}
+
+
+const todoForm = document.getElementById('todo-form');
+const todoInput = document.getElementById('todo-input');
+const todoList = document.getElementById('todo-list');
+
+
+document.addEventListener('DOMContentLoaded', loadTasks);
+
+
+todoForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    addTask(todoInput.value);
+    todoInput.value = ''; 
+});
+
+
+function addTask(taskText) {
+    if (taskText.trim() === '') return;
+
+    const li = document.createElement('li');
+
+
+    const taskSpan = document.createElement('span');
+    taskSpan.textContent = taskText;
+
+    
+    const editBtn = document.createElement('button');
+    editBtn.textContent = 'Edit';
+    editBtn.classList.add('edit-btn');
+    editBtn.addEventListener('click', () => editTask(li, taskSpan));
+
+    
+    const deleteBtn = document.createElement('button');
+    deleteBtn.textContent = 'Delete';
+    deleteBtn.classList.add('delete-btn');
+    deleteBtn.addEventListener('click', () => {
+        todoList.removeChild(li);
+        saveTasks();
+    });
+
+
+    li.appendChild(taskSpan);
+    li.appendChild(editBtn);
+    li.appendChild(deleteBtn);
+    todoList.appendChild(li);
+
+    saveTasks();
+}
+
+
+function editTask(li, taskSpan) {
+    const editInput = document.createElement('input');
+    editInput.type = 'text';
+    editInput.value = taskSpan.textContent;
+
+    const saveBtn = document.createElement('button');
+    saveBtn.textContent = 'Save';
+    saveBtn.classList.add('edit-btn');
+    saveBtn.addEventListener('click', () => {
+        taskSpan.textContent = editInput.value;
+        li.replaceChild(taskSpan, editInput);
+        li.replaceChild(editBtn, saveBtn);
+        saveTasks();
+    });
+
+    li.replaceChild(editInput, taskSpan);
+    li.replaceChild(saveBtn, li.querySelector('.edit-btn'));
+}
+
+
+function saveTasks() {
+    const tasks = [];
+    todoList.querySelectorAll('li').forEach(li => {
+        const taskText = li.querySelector('span').textContent;
+        tasks.push(taskText);
+    });
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+}
+
+
+function loadTasks() {
+    const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+    tasks.forEach(taskText => addTask(taskText));
+}
+
+document.querySelectorAll('nav ul li a').forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+
+        targetSection.scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
